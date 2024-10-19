@@ -150,7 +150,7 @@
 .imgsid {
   position: relative;
   z-index: 1;
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
   /* width: 50%; */
   height: 450px;
 
@@ -179,9 +179,61 @@
   display: grid;
   /* flex-direction: column; */
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+ 
 }
 .p2artsub{
 
-  width: 50%;
+  /* width: 50%; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  align-items: flex-start;
+  justify-items: center;
+  row-gap: 25px;
+  width: 45%;
+
+  margin-top: 70px;
+  margin-right: 200px;
+
+}
+
+.tiger-rt{
+  text-align:start;
+    color: hsl(229, 8%, 60%);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.moreinfo{
+  padding: 15px 23px 15px 23px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+.p2art>.p2artsub{
+  /* align-self:; */
+  justify-self: center  ;
+  align-items: start;
+}
+.p3artsub{
+  text-align:center;
+    color: hsl(229, 8%, 60%);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.p3art{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin:0 auto;
+  margin-bottom: 60px;
 }
 
