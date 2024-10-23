@@ -318,16 +318,33 @@ box-shadow: 0 4px 8px rgb(190, 183, 183);
 
 .faq{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr ; */
   height: 200px;
   margin-top: 80px;
   width: 500px;
   /* background-color: lightsalmon; */
-  align-content: center;
-  justify-content: center;
+  /* align-content: center;
+  justify-content: center; */
   gap:10px;
   margin-bottom: 50px;
   
+}
+
+.bk,.hre,.ip,.wers{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.bk>img,.hre>img,.ip>img,.wers>img{
+  justify-self: flex-end;
+}
+
+.bk>h3,.hre>h3,.ip>h3,.wers>h3{
+  /* justify-self: flex-end; */
+  color:rgb(87, 85, 85);
+}
+.faq>h3{
+  /* justify-self:start; */
+  /* color: white; */
 }
 .p5art{
   display: flex;
@@ -335,6 +352,21 @@ box-shadow: 0 4px 8px rgb(190, 183, 183);
   align-items: center;
   justify-content: center;
  
+}
+
+
+.p5art>h1{
+  font-size: 30px;
+  color:hsl(229, 31%, 21%)  ;
+}
+
+.p5art>p{
+  margin:auto auto;
+  width: 480px;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 27px;
+  color:rgb(150, 145, 145);
 }
 .hui{
   margin-bottom: 110px;
@@ -367,6 +399,10 @@ box-shadow: 0 4px 8px rgb(190, 183, 183);
 .p6art>.both{
   align-self: flex-start;
   justify-self: center;
+}
+
+.faq>h3{
+  font-size: 18px;
 }
 .rt{
   background-color:  hsl(0, 94%, 66%);
