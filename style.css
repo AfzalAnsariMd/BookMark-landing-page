@@ -9,13 +9,25 @@
   color: hsl(229, 8%, 60%);
   margin-bottom: 100px;
 }
+.s2container>.p1:hover{
+  cursor: pointer;
+  color:red;
+}
 
 .p1 > button {
-  padding: 5px 25px;
-
+  padding: 10px 30px;
+  border-radius: 4px;
   background-color: hsl(0, 94%, 66%);
   border: none;
+  /* cursor: pointer; */
+  
   color: white;
+}
+
+.p1>button:hover{
+  background-color: white;
+  border: 2px solid red;
+  color:red;
 }
 .s2container {
   display: flex;
@@ -31,6 +43,7 @@
   justify-content: center;
   align-items: center;
   background-color: red;
+  /* cursor: pointer; */
 }
 .c34 {
   display: flex;
@@ -48,18 +61,34 @@
 .btn1 {
   padding: 15px 23px 15px 23px;
   background-color: hsl(231, 69%, 60%);
-  color: white;
+  color: rgb(254, 251, 251);
 
   border: none;
   border-radius: 7px;
+}
+.btn1:hover{
+  background-color: white;
+  border: 2px solid hsl(231, 69%, 60%);
+  color:hsl(231, 69%, 60%);
+  cursor: pointer;
+  box-shadow: 0.1px 5px 0px hsl(230, 15%, 84%);
+  font-weight: bolder;
 }
 .btn2 {
   padding: 15px 23px 15px 23px;
   border-radius: 7px;
-
+  box-shadow: 1px 2px 0px rgb(160, 159, 159);
   border: none;
+  color: rgb(64, 62, 62);
 }
-
+.btn2:hover{
+  background-color: white;
+  border: 2px solid rgb(156, 111, 156);
+  color:rgb(156, 111, 156);
+  cursor: pointer;
+  box-shadow: 0.1px 5px 0px rgb(229, 215, 229);
+  font-weight: bolder;
+}
 .gt {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -140,11 +169,23 @@
   display: grid;
   justify-content: flex-end;
   align-content: flex-end;
+  font-size: 18px;
 }
 
 .three > .subthree2 {
   display: grid;
   place-items: center;
+  font-size: 18px;
+}
+
+.three>.subthree3{
+  font-size: 18px;
+}
+
+.three>.subthree1:hover,.three>.subthree2:hover,.three>.subthree3:hover{
+  cursor: pointer;
+  color:red;
+
 }
 
 .imgsid {
@@ -250,6 +291,27 @@ box-shadow: 0 4px 8px rgb(190, 183, 183);
   margin-bottom: 160px;
  
 
+}
+.moreinfo:hover{
+  cursor: pointer;
+  background-color: white;
+  border:2px solid hsl(231, 69%, 60%);
+  color:hsl(231, 69%, 60%)
+}
+.ife:hover{
+  cursor: pointer;
+  color:red;
+}
+
+.fs:hover,.pg:hover,.ct:hover{
+  cursor: pointer;
+  color:red;
+}
+
+.os:hover,.dbms:hover{
+  cursor: pointer;
+  background-color: red;
+  /* z-index: 7; */
 }
 .dotted-line {
   border: none;
